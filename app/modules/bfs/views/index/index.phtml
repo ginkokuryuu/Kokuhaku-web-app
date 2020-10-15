@@ -1,0 +1,14 @@
+<div class="control">
+    <button id="src-btn" onClick="changeType()">Source</button>
+    <button id="dst-btn" onClick="changeType()">Destination</button>
+    <button id="obs-btn" onClick="changeType()">Obstacle</button>
+    <button id="start-btn" onClick="compute()">Start!</button>
+    <button id="reset-btn" onClick="reset()">Reset</button>
+</div>
+
+<div id="grid">
+    <?php
+    for($i = 1; $i <= 6500; $i++): ?>
+        <div id=<?php echo $i?> class="grid-cell" onClick="cellClicked()"></div>
+    <?php endfor; ?>
+</div>

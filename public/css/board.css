@@ -1,0 +1,50 @@
+.my-container{
+    margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: auto;
+    height: 100vh;
+    background-color: black;
+}
+
+.grid-cell{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border: grey;
+    border-width: 1px;
+    border-style: groove;
+    float: left;
+}
+
+.grid-cell:hover{
+    background-color: white;
+}
+
+.src-cell{
+    background-color: green;
+}
+
+.dst-cell{
+    background-color: yellow;
+}
+
+.obstacle-cell{
+    background-color: red;
+}
+
+.cell-visited{
+    background-color: violet;
+}
+
+.path-cell{
+    background-color: slateblue;
+}
+
+#grid{
+    width: 1500px;
+    height: 1000px;
+}
